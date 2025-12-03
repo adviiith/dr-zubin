@@ -3,6 +3,7 @@ import ServicesGrid from "@/components/home/services-grid"
 import StatsSection from "@/components/home/stats-section"
 import DrZubinSection from "@/components/home/dr-zubin-section"
 import AccreditationSection from "@/components/home/accreditation-section"
+import FibroscanSection from "@/components/home/fibroscan-section"
 import CTASection from "@/components/home/cta-section"
 import Testimonials from "@/components/home/testimonials"
 import MapSection from "@/components/home/map-section"
@@ -15,6 +16,7 @@ export default function Home() {
       <StatsSection />
       <DrZubinSection />
       <AccreditationSection />
+      <FibroscanSection />
       <CTASection />
       <Testimonials />
       <MapSection />

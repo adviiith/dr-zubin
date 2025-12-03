@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 font-bold text-xl text-primary">
             <img src="/logo.png" alt="Aditya Hospital Logo" className="w-10 h-10 object-contain" />
-            <span className="hidden sm:inline">Aditya Hospital</span>
+            <span className="hidden sm:inline">Aditya Hospital & Gastro Center</span>
           </Link>
 
           {/* Desktop Menu */}

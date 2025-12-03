@@ -87,7 +87,7 @@ export default function HeroCarousel() {
       {/* Content */}
       <div className="relative h-full flex flex-col justify-center px-8 md:px-16 text-white">
         <div className="max-w-2xl">
-          <p className="text-accent font-semibold mb-2 text-lg">{slide.subtitle}</p>
+          <p className="text-sky-300 font-medium mb-2 text-lg tracking-wide">{slide.subtitle}</p>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-balance">{slide.title}</h1>
           <p className="text-lg text-white/90 mb-8 max-w-xl text-balance">{slide.description}</p>
           <div className="flex gap-4">

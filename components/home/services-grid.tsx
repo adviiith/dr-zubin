@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Microscope, Stethoscope, Activity, Zap, Ambulance, UserCheck } from "lucide-react"
+import ImmigrationMarquee from "./immigration-marquee"
 
 const services = [
   {
@@ -36,8 +37,11 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <section className="py-20 px-4 bg-secondary/30">
-      <div className="container mx-auto">
+    <section className="py-20 px-0 bg-secondary/30 relative overflow-hidden">
+      <div className="mb-16">
+        <ImmigrationMarquee />
+      </div>
+      <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
           <p className="text-accent font-semibold mb-2">OUR SERVICES</p>

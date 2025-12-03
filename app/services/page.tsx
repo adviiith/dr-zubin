@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Activity, Stethoscope, Zap, Shield, ClipboardList, Heart, Pill, Scan } from "lucide-react"
+import ImmigrationServiceDetail from "@/components/services/immigration-service-detail"
 
 const services = [
   {
@@ -59,6 +60,8 @@ export default function ServicesPage() {
           </p>
         </div>
       </section>
+
+      <ImmigrationServiceDetail />
 
       {/* Services Grid */}
       <section className="py-20 px-4">
