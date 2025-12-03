@@ -39,7 +39,7 @@ export default function Navbar() {
             onClick={handleEmergencyCall}
             className="text-sm font-semibold bg-red-600 px-3 py-1 rounded-full hover:bg-red-700 transition-colors cursor-pointer"
           >
-            🚨 Emergency: 0154 2442705
+            🚨 Emergency: 0154 3575599
           </button>
         </div>
       </div>

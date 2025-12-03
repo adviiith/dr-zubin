@@ -51,6 +51,10 @@ export default function Footer() {
                 <span>+91 7726 804920</span>
               </div>
               <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4" />
+                <span>+91 8949 988509</span>
+              </div>
+              <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 <span>contact@drzubinsharma.in</span>
               </div>

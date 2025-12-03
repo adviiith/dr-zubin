@@ -15,8 +15,8 @@ export default function AccreditationSection() {
               />
             </div>
             <div>
-              <h3 className="text-xl md:text-2xl font-bold text-foreground">WEO</h3>
-              <p className="text-foreground/70 font-semibold">World Endoscopy Organization</p>
+              <h3 className="text-xl md:text-2xl font-bold text-foreground">Accredited Centre of ADVANCED ENDOSCOPY</h3>
+              <p className="text-foreground/70 font-semibold">by World Endoscopy Organization</p>
             </div>
           </div>
 

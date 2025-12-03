@@ -75,8 +75,12 @@ export default function MapSection() {
                       +91 7726 804920
                     </a>
                     <br />
+                    <a href="tel:+918949988509" className="hover:text-accent">
+                      +91 8949 988509
+                    </a>
+                    <br />
                     <a href="tel:01542442705" className="hover:text-accent text-red-600 font-semibold">
-                      Emergency: 0154 2442705
+                      Emergency: 0154 3575599
                     </a>
                   </p>
                 </div>
