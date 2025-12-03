@@ -47,11 +47,11 @@ export default function ContactPage() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative py-32 px-4 bg-gradient-to-b from-primary/10 to-background">
+      <section className="relative py-20 sm:py-24 md:py-32 px-4 bg-gradient-to-b from-primary/10 to-background">
         <div className="container mx-auto text-center">
-          <p className="text-accent font-semibold mb-2">GET IN TOUCH</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-foreground mb-6 text-balance">Contact Us</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-accent font-semibold mb-2 text-sm sm:text-base">GET IN TOUCH</p>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-foreground mb-4 sm:mb-6 text-balance">Contact Us</h1>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
             We're here to help. Reach out to schedule an appointment or ask any questions.
           </p>
         </div>
@@ -98,16 +98,16 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Content */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <section className="py-12 sm:py-16 md:py-20 px-4">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Info Cards */}
-          <div className="space-y-6">
-            <Card className="p-6 bg-card">
-              <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+          <div className="space-y-4 sm:space-y-6">
+            <Card className="p-5 sm:p-6 bg-card">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-bold text-foreground mb-2">Phone</h3>
-                  <p className="text-muted-foreground text-sm">
+                  <h3 className="font-bold text-foreground mb-2 text-sm sm:text-base">Phone</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm">
                     <a href="tel:+917726804920" className="hover:text-accent">
                       +91 7726 804920
                     </a>
@@ -173,9 +173,9 @@ export default function ContactPage() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="p-8 bg-card">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
-              <form className="space-y-6" onSubmit={onSubmit}>
+            <Card className="p-6 sm:p-8 bg-card">
+              <h2 className="text-xl sm:text-2xl font-bold text-foreground mb-4 sm:mb-6">Send us a Message</h2>
+              <form className="space-y-4 sm:space-y-6" onSubmit={onSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">Full Name</label>

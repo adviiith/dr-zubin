@@ -4,20 +4,20 @@ import { Phone, MapPin, Mail, Facebook, Instagram, Linkedin } from "lucide-react
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div className="container mx-auto px-4 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {/* About */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Aditya Hospital</h3>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
+            <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">Aditya Hospital</h3>
+            <p className="text-primary-foreground/80 text-xs sm:text-sm leading-relaxed">
               Leading gastroenterology and advanced endoscopy center in Sri Ganganagar, Rajasthan.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Quick Links</h4>
+            <ul className="space-y-2 text-xs sm:text-sm">
               {["Home", "About", "Services", "Team", "Contact"].map((link) => (
                 <li key={link}>
                   <Link href={`/${link.toLowerCase()}`} className="hover:text-accent transition-colors">
@@ -30,8 +30,8 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Services</h4>
+            <ul className="space-y-2 text-xs sm:text-sm">
               {["Endoscopy", "Gastroenterology", "Hepatology", "ERCP"].map((service) => (
                 <li key={service}>
                   <Link href="/services" className="hover:text-accent transition-colors">
@@ -44,8 +44,8 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <div className="space-y-3 text-sm">
+            <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Contact</h4>
+            <div className="space-y-3 text-xs sm:text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 <span>+91 7726 804920</span>

@@ -25,33 +25,33 @@ export default function MapSection() {
   }, [])
 
   return (
-    <section className="py-20 px-4">
+    <section className="py-12 sm:py-16 md:py-20 px-4">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-accent font-semibold mb-2">LOCATION & HOURS</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
+        <div className="text-center mb-12 sm:mb-16">
+          <p className="text-accent font-semibold mb-2 text-sm sm:text-base">LOCATION & HOURS</p>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-4 text-balance">
             Visit Our State-of-the-Art Facility
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Map */}
-          <div className="lg:col-span-2 rounded-xl overflow-hidden shadow-lg h-96 lg:h-full min-h-96">
+          <div className="lg:col-span-2 rounded-xl overflow-hidden shadow-lg h-80 sm:h-96 lg:h-full lg:min-h-96">
             <div ref={mapContainer} className="w-full h-full" />
           </div>
 
           {/* Info Cards */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {/* Address */}
-            <div className="p-6 bg-secondary/50 rounded-lg border border-border hover:border-accent transition-colors">
-              <div className="flex items-start gap-4">
+            <div className="p-5 sm:p-6 bg-secondary/50 rounded-lg border border-border hover:border-accent transition-colors">
+              <div className="flex items-start gap-3 sm:gap-4">
                 <div className="w-10 h-10 bg-accent/20 rounded-lg flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-foreground mb-2">Address</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Address</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
                     30, Public Park, near MATKA CHOWK
                     <br />
                     Old Dhan Mandi, Sri Ganganagar

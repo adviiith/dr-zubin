@@ -21,7 +21,7 @@ const slides: Slide[] = [
     subtitle: "Expert Treatment",
     description:
       "Experience cutting-edge endoscopy and gastroenterology services with our specialized team of doctors.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/slide1-BpTK2Qx6nE1gWNW3VxaIyKkGrTvC8y.jpg",
+    image: "/facility.jpg",
     cta: "Schedule Consultation",
   },
   {
@@ -29,7 +29,7 @@ const slides: Slide[] = [
     title: "State-of-the-Art Facilities",
     subtitle: "Modern Medical Center",
     description: "Our facility features advanced diagnostic and therapeutic equipment for comprehensive healthcare.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/slide2-b1YZql3fcXw4vlT7ZuKvkVAqNHFAOX.jpg",
+    image: "/fac2.jpg",
     cta: "Learn More",
   },
   {
@@ -37,7 +37,7 @@ const slides: Slide[] = [
     title: "24/7 Emergency Services",
     subtitle: "Always Available",
     description: "Round-the-clock emergency care with specialized gastroenterology support when you need it most.",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/slide3-jCFQ9GlnZpt9n5OKtj5BFgguUBML1V.jpg",
+    image: "/fac3.jpg",
     cta: "Emergency Call",
   },
 ]
@@ -68,7 +68,7 @@ export default function HeroCarousel() {
 
   return (
     <div
-      className="relative h-[600px] md:h-[700px] overflow-hidden"
+      className="relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden"
       onMouseEnter={() => setAutoPlay(false)}
       onMouseLeave={() => setAutoPlay(true)}
     >
@@ -85,17 +85,17 @@ export default function HeroCarousel() {
       </div>
 
       {/* Content */}
-      <div className="relative h-full flex flex-col justify-center px-8 md:px-16 text-white">
+      <div className="relative h-full flex flex-col justify-center px-4 sm:px-8 md:px-16 text-white">
         <div className="max-w-2xl">
-          <p className="text-sky-300 font-medium mb-2 text-lg tracking-wide">{slide.subtitle}</p>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-balance">{slide.title}</h1>
-          <p className="text-lg text-white/90 mb-8 max-w-xl text-balance">{slide.description}</p>
-          <div className="flex gap-4">
+          <p className="text-sky-300 font-medium mb-2 text-base sm:text-lg tracking-wide">{slide.subtitle}</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight text-balance">{slide.title}</h1>
+          <p className="text-base sm:text-lg text-white/90 mb-6 sm:mb-8 max-w-xl text-balance">{slide.description}</p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link href="/contact">
-              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground text-base">{slide.cta}</Button>
+              <Button className="bg-accent hover:bg-accent/90 text-accent-foreground text-base w-full sm:w-auto">{slide.cta}</Button>
             </Link>
             <a href="https://www.facebook.com/p/Aditya-Gastro-Centre-100057311924759/" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent">
+              <Button variant="outline" className="border-white text-white hover:bg-white/10 bg-transparent w-full sm:w-auto">
                 <Play className="w-4 h-4 mr-2" />
                 Visit Facebook
               </Button>

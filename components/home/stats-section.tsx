@@ -55,21 +55,21 @@ function CountUpNumber({ target }: { target: number }) {
 
 export default function StatsSection() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10">
+    <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-r from-primary/10 via-accent/5 to-primary/10">
       <div className="container mx-auto">
-        <div className="flex flex-wrap justify-center gap-16 md:gap-32">
+        <div className="flex flex-wrap justify-center gap-12 sm:gap-16 md:gap-32">
           {stats.map((stat, idx) => (
             <div key={idx} className="text-center">
               <div className="flex justify-center mb-4">
-                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center text-accent">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 bg-accent/20 rounded-full flex items-center justify-center text-accent">
                   {stat.icon}
                 </div>
               </div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+              <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">
                 <CountUpNumber target={stat.number} />
                 {stat.suffix}
               </div>
-              <p className="text-muted-foreground font-medium">{stat.label}</p>
+              <p className="text-muted-foreground font-medium text-sm sm:text-base">{stat.label}</p>
             </div>
           ))}
         </div>
