@@ -1,37 +1,50 @@
 import { Card } from "@/components/ui/card"
 import { Microscope, Stethoscope, Activity, Zap, Ambulance, UserCheck } from "lucide-react"
 import ImmigrationMarquee from "./immigration-marquee"
+import Link from "next/link"
 
 const services = [
   {
     icon: Microscope,
     title: "Endoscopy & ERCP",
     description: "Advanced diagnostic and therapeutic endoscopic procedures with latest technology.",
+    slug: "endoscopy-ercp",
+    hasPage: true
   },
   {
     icon: Stethoscope,
     title: "Gastroenterology",
     description: "Comprehensive care for digestive system disorders and gastrointestinal health.",
+    slug: "gastroenterology",
+    hasPage: true
   },
   {
     icon: Activity,
     title: "Hepatology",
     description: "Specialized liver disease treatment and hepatitis management.",
+    slug: "hepatology",
+    hasPage: true
   },
   {
     icon: Zap,
     title: "EUS Procedures",
     description: "Endoscopic ultrasound for precise diagnostic imaging and intervention.",
+    slug: "eus-procedures",
+    hasPage: true
   },
   {
     icon: Ambulance,
     title: "Emergency Care",
     description: "24/7 emergency services for acute gastroenterological conditions.",
+    slug: "contact",
+    hasPage: false
   },
   {
     icon: UserCheck,
     title: "Consultation",
     description: "Expert consultation in gastrointestinal and hepato-pancreatic conditions.",
+    slug: "contact",
+    hasPage: false
   },
 ]
 
@@ -57,6 +70,9 @@ export default function ServicesGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {services.map((service, idx) => {
             const Icon = service.icon
+            const linkHref = service.hasPage ? `/services/${service.slug}` : `/${service.slug}`
+            const linkText = service.hasPage ? "Learn More →" : "Contact Us →"
+
             return (
               <Card
                 key={idx}
@@ -68,12 +84,12 @@ export default function ServicesGrid() {
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold mb-3 text-foreground">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
-                <a
-                  href="/services"
+                <Link
+                  href={linkHref}
                   className="inline-flex items-center gap-2 mt-6 text-accent font-semibold hover:gap-3 transition-all text-sm sm:text-base"
                 >
-                  Learn More →
-                </a>
+                  {linkText}
+                </Link>
               </Card>
             )
           })}

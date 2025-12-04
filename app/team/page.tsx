@@ -4,44 +4,9 @@ const doctors = [
   {
     name: "Dr. Zubin Sharma",
     specialty: "Senior Consultant, GI Endoscopist & Endosonologist",
-    credentials: "MD, MRCP (UK), FRCPI (Ireland), FRCP (Edinburgh), ESEGH",
-    bio: "Dr. Zubin Sharma is a senior consultant with extensive experience in GI endoscopy and endoscopic ultrasound. He completed his fellowship at Academic Medical Centre, Amsterdam and has trained under renowned endoscopists.",
+    credentials: "MD, MRCP (UK), FRCPI (Ireland), FRCP (Edinburgh), European Board of Gastroenterology & Hepatology",
+    bio: "Dr. Zubin Sharma is a senior consultant with extensive experience in GI endoscopy and endoscopic ultrasound. He has passed the European Board of Gastroenterology & Hepatology and holds a Speciality Certificate in Gastroenterology from the U.K. He completed his fellowship at Academic Medical Centre, Amsterdam, trained in Hepatology at Kings College Hospital, London, and underwent advanced training in Third Space Endoscopy from Japan.",
     image: "https://images.unsplash.com/photo-1559839734335-3ec0a9b79a5e?w=400&h=500&fit=crop",
-  },
-  {
-    name: "Dr. Kapil Jain",
-    specialty: "Director & Gastroenterologist",
-    credentials: "MBBS, MD (Medicine), DM (Gastroenterology)",
-    bio: "Dr. Kapil Jain is the visionary director of Aditya Hospital. With a passion for gastroenterology and hepatology, he established this center to provide world-class medical care in the region.",
-    image: "https://images.unsplash.com/photo-1622879278866-9df17bef8e1a?w=400&h=500&fit=crop",
-  },
-  {
-    name: "Dr. Pradeep Jain",
-    specialty: "Psychiatry Specialist",
-    credentials: "MD, MRCP, DM",
-    bio: "Dr. Pradeep Jain specializes in psychiatry and provides comprehensive mental health services alongside our medical offerings.",
-    image: "https://images.unsplash.com/photo-1612349317150-e16fa66d18a9?w=400&h=500&fit=crop",
-  },
-  {
-    name: "Dr. Ankur Singh",
-    specialty: "Orthopedic & Spine Surgeon",
-    credentials: "MS, MCh (Orthopedics)",
-    bio: "Dr. Ankur Singh is an accomplished orthopedic and spine surgeon with expertise in complex orthopedic procedures.",
-    image: "https://images.unsplash.com/photo-1537368610025-700dbee93fe1?w=400&h=500&fit=crop",
-  },
-  {
-    name: "Dr. Bharathi Akula",
-    specialty: "Surgical Gastroenterologist",
-    credentials: "MBBS, MS, MRCS, ESOG, FAGES",
-    bio: "Dr. Bharathi Akula specializes in surgical gastroenterology with a focus on minimally invasive techniques.",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop",
-  },
-  {
-    name: "Dr. Akash Nair",
-    specialty: "General Surgery & Surgical Oncology",
-    credentials: "MBBS, MS, FELLOWSHIP",
-    bio: "Dr. Akash Nair brings expertise in general surgery and surgical oncology to our multidisciplinary team.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop",
   },
 ]
 

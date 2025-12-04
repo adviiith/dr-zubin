@@ -22,7 +22,7 @@ export default function DrZubinSection() {
             <p className="text-accent font-semibold mb-2">MEET THE EXPERT</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground text-balance">Dr. Zubin Sharma</h2>
             <p className="text-accent font-semibold text-lg mb-4">
-              MD, MRCP (UK), FRCPI (IRELAND), FRCP (EDINBURGH), ESEGH (Gastroenterology)
+              MD, MRCP (UK), FRCPI (IRELAND), FRCP (EDINBURGH), European Board of Gastroenterology & Hepatology
             </p>
 
             <p className="text-foreground/80 leading-relaxed mb-6">
@@ -33,9 +33,11 @@ export default function DrZubinSection() {
 
             <p className="text-foreground/80 leading-relaxed mb-6">
               After completing his M.D. in Internal Medicine, he pursued Fellowship in Gastroenterology and Endoscopy
-              from Tata Memorial Hospital, Mumbai. He subsequently completed his ESGE Fellowship in ERCP and Endoscopic
-              Ultrasound at Academic Medical Centre, Amsterdam under Prof. Paul Fockens, and trained in Hepatology at
-              Kings College Hospital, London.
+              from Tata Memorial Hospital, Mumbai. He has passed the European Board of Gastroenterology & Hepatology
+              and holds a Speciality Certificate in Gastroenterology from the U.K. He subsequently completed his ESGE
+              Fellowship in ERCP and Endoscopic Ultrasound at Academic Medical Centre, Amsterdam under Prof. Paul Fockens,
+              trained in Hepatology at Kings College Hospital, London, and underwent advanced training in Third Space
+              Endoscopy from Japan.
             </p>
 
             <ul className="space-y-3 mb-8">

@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Activity, Stethoscope, Zap, Shield, ClipboardList, Heart, Pill, Scan } from "lucide-react"
 import ImmigrationServiceDetail from "@/components/services/immigration-service-detail"
+import Link from "next/link"
 
 const services = [
   {
@@ -8,42 +9,58 @@ const services = [
     title: "Diagnostic Endoscopy",
     description:
       "Advanced upper GI endoscopy (Oesophagogastro-duodenoscopy) for diagnosis of food pipe, stomach, and small intestine conditions.",
+    slug: "endoscopy-ercp",
+    hasPage: true
   },
   {
     icon: ClipboardList,
     title: "Therapeutic ERCP",
     description:
       "Treatment of obstructive jaundice, stones, and pancreatic disorders with advanced therapeutic intervention.",
+    slug: "endoscopy-ercp",
+    hasPage: true
   },
   {
     icon: Zap,
     title: "Endoscopic Ultrasound",
     description: "Precise diagnostic imaging for cancers of food pipe, stomach, pancreas, and gallbladder.",
+    slug: "eus-procedures",
+    hasPage: true
   },
   {
     icon: Scan,
     title: "Lower GI Colonoscopy",
     description: "Comprehensive examination and treatment of large intestine conditions with advanced technology.",
+    slug: "gastroenterology",
+    hasPage: true
   },
   {
     icon: Heart,
     title: "Hepatology Services",
     description: "Expert treatment for Hepatitis B & C, liver diseases, and comprehensive hepatic care.",
+    slug: "hepatology",
+    hasPage: true
   },
   {
     icon: Shield,
     title: "Emergency Services",
     description: "24/7 emergency care for acute GI bleeds and critical gastroenterological conditions.",
+    slug: "contact",
+    hasPage: false
   },
   {
     icon: Pill,
     title: "Stenting Procedures",
     description: "Metallic stenting for malignant cases including biliary, enteral, and esophageal stenting.",
+    slug: "endoscopy-ercp",
+    hasPage: true
   },
   {
     icon: Stethoscope,
     title: "Consultation",
     description: "Expert medical consultation for all gastrointestinal, hepatic, and pancreatic disorders.",
+    slug: "contact",
+    hasPage: false
   },
 ]
 
@@ -69,6 +86,9 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, idx) => {
               const Icon = service.icon
+              const linkHref = service.hasPage ? `/services/${service.slug}` : `/${service.slug}`
+              const linkText = service.hasPage ? "Learn More →" : "Contact Us →"
+
               return (
                 <Card
                   key={idx}
@@ -78,7 +98,13 @@ export default function ServicesPage() {
                     <Icon className="w-6 h-6 text-accent" />
                   </div>
                   <h3 className="text-lg font-bold mb-3 text-foreground">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">{service.description}</p>
+                  <Link
+                    href={linkHref}
+                    className="inline-flex items-center gap-2 text-accent font-semibold hover:gap-3 transition-all text-sm"
+                  >
+                    {linkText}
+                  </Link>
                 </Card>
               )
             })}
