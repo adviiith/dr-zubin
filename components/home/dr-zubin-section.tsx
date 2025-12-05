@@ -22,7 +22,7 @@ export default function DrZubinSection() {
             <p className="text-accent font-semibold mb-2">MEET THE EXPERT</p>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground text-balance">Dr. Zubin Sharma</h2>
             <p className="text-accent font-semibold text-lg mb-4">
-              MD, MRCP (UK), FRCPI (IRELAND), FRCP (EDINBURGH), European Board of Gastroenterology & Hepatology
+              MD, MRCP (UK), FRCPI (IRELAND), FRCP (EDINBURGH), FASGE, European Board of Gastroenterology & Hepatology
             </p>
 
             <p className="text-foreground/80 leading-relaxed mb-6">

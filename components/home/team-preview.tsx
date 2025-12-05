@@ -6,7 +6,7 @@ const doctors = [
   {
     name: "Dr. Zubin Sharma",
     specialty: "GI Endoscopist & Hepatologist",
-    credentials: "MD, MRCP (UK), FRCPI, FRCP, European Board of Gastroenterology & Hepatology",
+    credentials: "MD, MRCP (UK), FRCPI, FRCP, FASGE, European Board of Gastroenterology & Hepatology",
     image: "https://images.unsplash.com/photo-1559839734335-3ec0a9b79a5e?w=300&h=300&fit=crop",
   },
   {

@@ -4,7 +4,7 @@ const doctors = [
   {
     name: "Dr. Zubin Sharma",
     specialty: "Senior Consultant, GI Endoscopist & Endosonologist",
-    credentials: "MD, MRCP (UK), FRCPI (Ireland), FRCP (Edinburgh), European Board of Gastroenterology & Hepatology",
+    credentials: "MD, MRCP (UK), FRCPI (Ireland), FRCP (Edinburgh), FASGE, European Board of Gastroenterology & Hepatology",
     bio: "Dr. Zubin Sharma is a senior consultant with extensive experience in GI endoscopy and endoscopic ultrasound. He has passed the European Board of Gastroenterology & Hepatology and holds a Speciality Certificate in Gastroenterology from the U.K. He completed his fellowship at Academic Medical Centre, Amsterdam, trained in Hepatology at Kings College Hospital, London, and underwent advanced training in Third Space Endoscopy from Japan.",
     image: "https://images.unsplash.com/photo-1559839734335-3ec0a9b79a5e?w=400&h=500&fit=crop",
   },
