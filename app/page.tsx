@@ -1,4 +1,6 @@
 import HeroCarousel from "@/components/home/hero-carousel"
+import ImmigrationMarquee from "@/components/home/immigration-marquee"
+import WhatsNew from "@/components/home/whats-new"
 import ServicesGrid from "@/components/home/services-grid"
 import StatsSection from "@/components/home/stats-section"
 import DrZubinSection from "@/components/home/dr-zubin-section"
@@ -12,6 +14,8 @@ export default function Home() {
   return (
     <main>
       <HeroCarousel />
+      <ImmigrationMarquee />
+      <WhatsNew />
       <ServicesGrid />
       <StatsSection />
       <DrZubinSection />
